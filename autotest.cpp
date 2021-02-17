@@ -104,6 +104,7 @@ int Auto(void)
          cout<<endl<<"Autotest failed! Wasted..."<<endl;
      }
      cout<<endl<<"============================="<<endl;
+delete[] str;
 return 0;
 }
 
