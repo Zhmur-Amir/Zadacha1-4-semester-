@@ -184,7 +184,6 @@ public:
 void Autotest(void);
 int Auto(void);
 ostream &operator<<(ostream &cout,  ClntN &s);
-ClntN FuncInput(const char FileName);
 ClntN* CCreate(string str,CFactory stln, int r);
 int PyatiletkyV4Goda(const char* FileName);
 
