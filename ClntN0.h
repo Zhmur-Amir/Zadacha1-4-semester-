@@ -10,6 +10,7 @@ protected:
 public:
     ClntN0(){SetZero();}
     ~ClntN0(){Clean();}
+    ClntN0(const ClntN0 &b){SetZero(); CopyOnly(b);}
     ClntN0 &operator=(const ClntN&b){if(this!=&b){Clean(); CopyOnly(b);} return *this;}
     void SetZero(){arr=NULL; s=NULL; n=0; FileName=NULL;}
     ClntN0(const bool r,const int m, const int* brr, const char* filename);
