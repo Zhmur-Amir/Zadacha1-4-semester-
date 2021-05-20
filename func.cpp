@@ -1,5 +1,7 @@
 #include "ClntN.h"
-
+#include "ClntN1.h"
+#include "ClntN0.h"
+#include "wh.h"
 
 ostream &operator<<(ostream &cout,  ClntN &s){s.print(); return cout;}
 
@@ -76,12 +78,12 @@ ClntN* CCreate(string str,CFactory stln, int r)
          if(str[0]!='1' || str[1]!=' ' ||str[2]==' ' )
       {
           cout<<"Input Syntax Error!"<<endl;
-           exit -4;
+           exit (-4);
       }
       else
       {
          cout<<"Input Syntax Error!"<<endl;
-           exit -4;
+           exit (-4);
       }
      }
 
@@ -100,7 +102,7 @@ ClntN* CCreate(string str,CFactory stln, int r)
    if(str[j]!=' '||str[j+1]==' ')
       {
           cout<<"Input Syntax Error!2"<<endl;
-           exit -5;
+           exit (-5);
       }
       filename[j-2]='\0';
     if(str[j+1]=='+')
@@ -116,7 +118,7 @@ ClntN* CCreate(string str,CFactory stln, int r)
         else
         {
            cout<<"Input Syntax Error3!"<<endl;
-           exit -6;
+           exit (-6);
         }
 
     }
